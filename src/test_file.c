@@ -5,14 +5,14 @@ void main()
     // create_fs();
    
     mount_fs();
-    int file=allocate_file("file1");
-    set_filesize(file,500);
+    int file=allocate_file("jay1");
+    set_filesize(file,600);
    
     print_fs();
     int i;
-    char data='b';
+    char data='c';
     for ( i = 0; i <49; i++){
-        write_byte(file ,i*100,&data);
+        write_byte(file ,i*200,&data);
 
     }
    // to read the data
